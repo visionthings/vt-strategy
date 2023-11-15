@@ -1,0 +1,280 @@
+body{
+    background-color: #1e1e1e !important;
+    overflow-y: auto;
+}
+.main {
+    background-color: #1e1e1e !important;
+    height: 100vh;
+}
+
+
+
+h2 {
+    font-weight: 400;
+    margin-bottom: unset;
+
+}
+
+
+/* //Badge color overwirte */
+
+
+
+.badge-success {
+    color: var(--success-text) !important;
+    background-color: var(--success-bg);
+    border: 1px solid;
+}
+
+.badge-primary {
+    color: var(--primary-text) !important;
+    ;
+    background-color: var(--primary-bg);
+    border: 1px solid;
+}
+
+.badge-warning {
+    color: var(--warning-text) !important;
+    ;
+    background-color: var(--warning-bg);
+    border: 1px solid;
+}
+
+.badge-danger {
+    color: var(--danger-text) !important;
+    ;
+    background-color: var(--danger-bg);
+    border: 1px solid;
+}
+
+.time {
+    font-size: .75rem;
+}
+
+
+/* //Badge color overwirte end */
+
+
+/* table styling */
+
+/* primary table container  */
+table {
+    text-align: center;
+}
+
+.table-container {
+    box-shadow: 0px 1px 2px 0px rgba(255, 215, 13, 0.25), 0px 2px 6px 2px rgba(224, 170, 10, 0.1);
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: var(--black);
+    color: white;
+    overflow-y: auto;
+}
+
+
+th {
+    padding: 1rem .5rem !important;
+    font-size: .875rem;
+    margin-bottom: 1rem !important;
+    background: linear-gradient(var(--lightgold), var(--darkgold));
+    color: var(--black) !important;
+    font-weight: 600 !important;
+    vertical-align: middle;
+}
+
+
+tr td:last-child {
+    text-align: right;
+}
+
+/* Changing TH bottom border color*/
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: rgba(128, 128, 128, 0.277) !important;
+
+}
+
+
+/* table styling end*/
+
+
+.btn-link:hover {
+    text-decoration-color: #0d6efd !important;
+    text-underline-offset: 0.4em !important;
+}
+
+.empty-consultation {
+    width: 100%;
+    text-align: center;
+}
+
+table .active_status {
+    color: rgb(9, 178, 9);
+}
+
+table .arcived_status {
+    color: red;
+}
+
+.edit-form-box {
+    width: 150px;
+}
+
+form {
+    margin: 5px auto 0 auto;
+    background: white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+form select {
+    padding: 5px 10px;
+    outline: none;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -ms-transition: 0.2s ease all;
+    -o-transition: 0.2s ease all;
+    transition: 0.2s ease all;
+    font-family: "system-ui"
+
+}
+
+
+
+
+.date-input-container span {
+    padding: 0 5px;
+}
+
+.date-input-container .date-archived-status {
+    color: red;
+}
+
+.date-input-container .date-active-status {
+    color: rgb(9, 178, 9);
+
+}
+
+.date-archived-status {
+    color: red;
+}
+
+.date-active-status {
+    color: rgb(9, 178, 9);
+}
+
+.time-form-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background-color: rgb(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 50px 0;
+    display: none;
+}
+
+.time-form-container .time-form-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.time-form-container .time-form-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.time-form-container .time-form-content .time-form-form {
+    width: 30%;
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.time-form-container .time-form-content .time-form-form h5 {
+    color: #222222;
+}
+
+.time-form-container .time-form-content .time-form-form form {
+    width: 100%;
+    display: block !important;
+}
+
+.time-form-container .time-form-content form div {
+    width: 90% !important;
+    margin: auto;
+}
+
+.time-form-container .time-form-content form #genrate_time {
+    width: 100%;
+
+}
+
+.time-form-container .time-form-content form #genrate_time .time-inputs {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0;
+}
+
+#genrate_time_btn {
+    cursor: pointer;
+}
+
+.add-new-date-form-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.add-new-date-form-container .add-new-date-form-close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.add-new-date-form-container .add-new-date-form-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.add-new-date-form-container .add-new-date-form-content form {
+    width: 200px;
+    display: grid !important;
+    padding: 20px;
+    text-align: center;
+}
+
+.add-new-date-form-container .add-new-date-form-content form div {
+    margin: 10px 0;
+}

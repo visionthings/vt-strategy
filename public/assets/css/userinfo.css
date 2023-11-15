@@ -1,0 +1,22 @@
+.userinfo{
+    margin-top: 60px;
+}
+form{
+    background-color: var(--black);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+form input::placeholder{
+    text-align: center;
+}
+form input{
+    text-align: center;
+}
+form label{
+    color: var(--darkgold);
+    margin-bottom: 5px;
+    font-weight: bold;
+}

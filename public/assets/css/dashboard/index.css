@@ -1,0 +1,339 @@
+body {
+    background-color: rgb(25, 25, 25);
+    color: white;
+    overflow-y: auto;
+}
+
+/* start sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 22vw;
+    height: 100%;
+    transition: left 0.3s;
+    background-color: var(--black);
+    color: white;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    z-index: 999;
+    overflow-y: auto;
+}
+
+.sidebar li {
+    cursor: pointer;
+    padding: 8px 5px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    color: white;
+}
+
+.sidebar li:hover {
+    background-color: var(--lightgold);
+}
+
+.sidebar li:hover span,
+.sidebar li:hover svg {
+    color: var(--black);
+}
+
+.sidebar li.active {
+    background: linear-gradient(var(--lightgold), var(--darkgold));
+
+}
+
+.sidebar h6 {
+    color: var(--lightgold);
+    margin: 10px 5px;
+}
+
+.sidebar li svg {
+    font-size: 20px;
+    color: var(--darkgold);
+    margin-left: 10px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.sidebar {
+    color: white;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+.sidebar li.active,
+.sidebar li.active svg {
+    color: var(--black);
+}
+
+
+/* end sidebar */
+/* start nav */
+
+.nav {
+    position: fixed;
+    left: 0;
+    right: 22vw;
+    padding: 10px;
+    background-color: var(--black);
+    transition: right 0.3s ease-in-out;
+    -webkit-transition: right 0.3s ease-in-out;
+    -moz-transition: right 0.3s ease-in-out;
+    -ms-transition: right 0.3s ease-in-out;
+    -o-transition: right 0.3s ease-in-out;
+    z-index: 999;
+}
+
+.nav #sidetoggler {
+    font-size: 25px;
+    margin: auto 0;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    cursor: pointer;
+}
+
+.nav #sidetoggler:hover {
+    color: var(--darkgold);
+}
+
+.nav .dropdown button {
+    color: white;
+}
+
+.nav .dropdown button:hover {
+    color: var(--lightgold);
+}
+
+.nav .dropdown button:focus {
+    border-color: transparent;
+    color: var(--darkgold);
+}
+
+.nav .dropdown .dropdown-menu {
+    background-color: var(--black);
+    border: 1px solid var(--lightgold);
+}
+
+.nav .dropdown .dropdown-menu a {
+    color: white;
+}
+
+.nav .dropdown-item:hover,
+.nav .dropdown-item:focus {
+    background-color: transparent;
+}
+
+.nav .dropdown .dropdown-menu a:hover {
+    color: var(--darkgold);
+}
+
+/* end nav */
+/* start content */
+.content {
+    margin-right: 22vw;
+    transition: margin-right 0.3s ease-in-out;
+    -webkit-transition: margin-right 0.3s ease-in-out;
+    -moz-transition: margin-right 0.3s ease-in-out;
+    -ms-transition: margin-right 0.3s ease-in-out;
+    -o-transition: margin-right 0.3s ease-in-out;
+    position: absolute;
+    top: 57px;
+    left: 0px;
+    right: 0px;
+}
+
+.bg-black {
+    background-color: var(--black);
+}
+
+.content h3,
+.content h4 {
+    background: linear-gradient(to left, var(--darkgold), var(--lightgold));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.content h3 svg,
+.content h4 svg {
+    color: var(--lightgold);
+}
+
+.charts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chart-container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.content table tr td,
+table tr th {
+    background: rgb(25, 25, 25) !important;
+    color: white;
+    text-align: center;
+    border-color: var(--lightgold);
+    vertical-align: middle;
+
+}
+
+.content table {
+    margin-top: 20px;
+    border: 1.5px solid var(--darkgold);
+}
+
+.content table thead tr th {
+    background: linear-gradient(var(--darkgold), var(--lightgold)) !important;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    color: var(--darkgold);
+    -webkit-filter: invert(1);
+    cursor: pointer;
+}
+
+.content #statistics .small-box h6 {
+    font-size: 1.3rem;
+}
+
+.red {
+    color: #ff507d;
+}
+
+.blue {
+    color: #65B9FF;
+}
+
+.green {
+    color: #A0BF05;
+}
+
+.orange {
+    color: #F29C1F;
+}
+
+.content #statistics .small-box span {
+    font-size: 2rem;
+    font-weight: bold;
+    background: linear-gradient(to left, var(--darkgold), var(--lightgold));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.content .formWidth {
+    margin: auto;
+}
+
+.form-control{
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-radius: 0;
+    border: 2px solid var(--lightgold);
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.content label {
+    color: var(--darkgold);
+}
+
+.content input[type=file]::-webkit-file-upload-button {
+    background: linear-gradient(to right, var(--darkgold), var(--lightgold));
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+.content input[type=file]::-webkit-file-upload-button:hover {
+    background: linear-gradient(to right, var(--darkgold), var(--darkgold));
+    color: var(--black);
+}
+
+.content .formWidth input {
+    margin-bottom: 25px;
+}
+
+.form-control::placeholder,
+.content textarea::placeholder {
+    color: rgba(238, 179, 110, 0.5);
+}
+
+.content input:focus::placeholder,
+.content textarea:focus::placeholder {
+    color: var(--darkgold);
+}
+
+.content .form-control:focus {
+    box-shadow: 0 0 0 0.3rem rgba(238, 179, 110, 0.5);
+    border-color: transparent;
+    color: white;
+    background-color: rgb(25, 25, 25);
+}
+
+.tox .tox-statusbar {
+    display: none !important;
+}
+
+textarea {
+    resize: none;
+}
+@media (max-width:767px) {
+    .sidebar{
+        width:60vw;
+        right: -60vw;
+        z-index: 9999;
+    }
+    .nav{
+        right: 0;
+    }
+    .content{
+        margin: 0;
+    }
+    .content.black-and-white {
+        filter: grayscale(100%);
+      }
+}
+@media (min-width:768px) {
+    .content .formWidth {
+        width: 50%;
+    }
+}
+.controller-flash-message{
+    text-align: center;
+}
+.error{
+    color: red;
+}
+select.form-control{
+    color: var(--darkgold) !important;
+}
+div.tox-notifications-container{
+    display: none;
+}

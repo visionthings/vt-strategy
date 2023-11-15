@@ -1,0 +1,141 @@
+/* start head */
+.head {
+    height: 100vh;
+    background-image: url(./../images/article.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--lightgold);
+}
+
+.head .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head .image {
+    position: relative;
+}
+
+.head .image img {
+    width: 100%;
+    height: auto;
+    z-index: 999999;
+}
+
+.head .image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 10px solid;
+    border-color: transparent var(--darkgold) var(--darkgold) transparent;
+    box-sizing: border-box;
+    margin: 25px 0 0 25px;
+    z-index: 2;
+}
+
+@media (max-width:767px) {
+    .head h2 {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:600px) {
+    .head .image {
+        width: 80%;
+        margin: auto;
+    }
+
+    .head {
+        overflow-x: hidden;
+    }
+}
+
+/* end head */
+/* start article */
+.article h2 {
+    font-weight: bold;
+    background: linear-gradient(45deg, var(--darkgold), var(--lightgold));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.article .date svg {
+    color: var(--darkgold);
+}
+
+.article .date span {
+    color: #585858;
+}
+
+.article .major strong {
+    padding: 3px 10px;
+    border-radius: 10px;
+    background: linear-gradient(var(--darkgold), var(--lightgold));
+    margin-left: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    color: white;
+}
+
+.article .major p {
+    color: #585858;
+    margin: 0;
+}
+
+.article .img-contain {
+    padding: 0 0 0 30px;
+    position: relative;
+}
+
+.article .img-contain::after {
+    content: "";
+    width: 90%;
+    height: 95%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(./../images/dot.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
+.article p {
+    text-align: justify;
+    line-height: 1.8em;
+}
+
+@media (min-width:768px) {
+    .article iframe {
+        width: 80%;
+        margin: auto;
+    }
+}
+
+@media (max-width:767px) {
+    .article iframe {
+        height: 400px;
+    }
+}
+
+@media (max-width:600px) {
+    .article {
+        overflow-x: hidden;
+    }
+
+    .article .img-contain {
+        width: 85%;
+        margin: auto;
+    }
+
+    .article iframe {
+        height: 300px;
+    }
+}
+
+/* end article */

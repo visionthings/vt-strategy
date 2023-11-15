@@ -1,0 +1,200 @@
+/* start header section */
+.home {
+    height: 100vh;
+    background-image: url(./../../assets/images/services2.jpg);
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.home .content {
+    position: relative;
+    z-index: 2;
+}
+.home img {
+    animation: logoanimate 1s linear infinite alternate;
+    transform-style: preserve-3d;
+    -webkit-animation: logoanimate 1s linear infinite alternate;
+}
+
+@keyframes logoanimate {
+    0% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+    }
+
+}
+
+
+.home h1 {
+    font-size: 4rem;
+    background: linear-gradient(45deg, var(--darkgold), var(--lightgold));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.home .line {
+    display: block;
+    width: 150px;
+    height: 3px;
+    background: linear-gradient(to right, var(--darkgold), var(--lightgold));
+    margin: 15px 0 20px;
+}
+
+.home h3,
+.home p {
+    color: white;
+}
+
+
+/* end header section */
+/* start services section */
+.services{
+    background-image: url(./../images/termsback.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed; 
+    padding-top: 70px !important;
+}
+.services .serv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    padding: 0px 0px 10px 0px;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.services .serv h6{
+    color: var(--lightgold);
+    text-align: center;
+}
+.services .serv .circle {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(179, 115, 62 ,0.6);
+    overflow: hidden;
+  }
+.services .serv .overlay{
+    position: absolute;
+    top: 120%;
+    bottom:5px;
+    left: 5px;
+    right: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.4s;
+    -webkit-transition: 0.4s;
+    -moz-transition: 0.4s;
+    -ms-transition: 0.4s;
+    -o-transition: 0.4s;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.services .serv:hover{
+    box-shadow: 0 0 15px rgba(179, 115, 62 ,0.7);
+}
+.services .serv:hover .overlay{
+    top: 5px;
+}
+.services .serv .details{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999999;
+    display: none;
+}
+.services .serv .details .content{
+    width: 70%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    overflow-y: auto;
+}
+.services .serv .details .content .closebtn{
+    position: sticky;
+    top: 0;
+    right: 100%;
+    cursor: pointer !important;
+    padding: 1px 3px;
+}
+.services .serv .details .content .closebtn:hover{
+    color: gray;
+}
+@media (max-width:767px) {
+    .services .serv .details .content {
+        width: 90%;
+    }
+    .services .serv .overlay{
+        position: relative;
+        top: 5px;
+        background-color: transparent;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+    }
+    .services .serv .overlay button{
+        margin: 0 !important;
+        margin-left: 10px !important;
+    }
+}
+/* end services section */

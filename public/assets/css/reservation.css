@@ -1,0 +1,230 @@
+/* start header section */
+.home {
+    height: 100vh;
+    background-image: url(./../images/consult.jpeg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.home .content {
+    position: relative;
+    z-index: 2;
+}
+
+.home img {
+    animation: logoanimate 1s linear infinite alternate;
+    transform-style: preserve-3d;
+    -webkit-animation: logoanimate 1s linear infinite alternate;
+}
+
+@keyframes logoanimate {
+    0% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+    }
+
+}
+
+
+.home h1 {
+    font-size: 4rem;
+    background: linear-gradient(45deg, var(--darkgold), var(--lightgold));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.home .line {
+    display: block;
+    width: 150px;
+    height: 3px;
+    background: linear-gradient(to right, var(--darkgold), var(--lightgold));
+    margin: 15px 0 20px;
+}
+
+.home h3,
+.home p {
+    color: white;
+}
+
+nav{
+    background-color: var(--black) !important;
+}
+/* end header section */
+
+/* start reservation */
+#booknow{
+    padding-top: 70px !important;
+}
+button {
+    cursor: pointer;
+}
+
+.reservation .step {
+    display: none;
+}
+
+.reservation .step.active {
+    display: block;
+}
+
+.reservation h3 {
+    margin-bottom: 20px;
+    color: var(--darkgold);
+}
+
+.reservation .form-control {
+    text-align: right;
+    color: black;
+}
+.reservation select.form-control{
+    color: var(--lightgold);
+}
+.form-control::placeholder {
+    color: var(--lightgold);
+}
+
+.form-control:focus::placeholder {
+    color: var(--darkgold);
+}
+
+.form-control:focus {
+    color: var(--darkgold);
+}
+
+.reservation button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+
+.reservation .pricing {
+    color: white;
+    padding: 15px 0;
+}
+
+.reservation .pricing h3 {
+    color: var(--lightgold);
+}
+
+.reservation .pricing tr td {
+    font-size: 18px;
+    padding: 7px 0;
+}
+.reservation h6{
+    color: var(--lightgold);
+}
+.reservation h6 span{
+    color: var(--black);
+}
+.reservation label{
+    color: var(--darkgold);
+}
+.reservation .pricing .light {
+    background: linear-gradient(var(--darkgold), var(--lightgold));
+    color: var(--black);
+}
+
+.reservation .pricing .line {
+    width: 90%;
+    height: 3px;
+    background-color: var(--darkgold);
+    margin: 10px auto;
+}
+
+.reservation .pricing strong {
+    color: var(--darkgold);
+}
+
+
+.reservation .radio-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reservation .radio-label {
+    margin-left: 10px;
+    height: 100%;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+.reservation .radio-button {
+    display: none;
+}
+
+.reservation .radio-button+label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.reservation .radio-button:checked+label {
+    background-color: var(--lightgold);
+    color: #fff;
+    border-color: var(--lightgold);
+}
+
+.con-searsh-container{
+    width: 100%;
+    text-align: center;
+}
+.con-searsh-container .con-searsh-content{
+    width: 100%;
+}
+.con-searsh-container .con-searsh-content h5{
+    padding: 10px;
+}
+.con-searsh-container .con-searsh-content form{
+    width: 80%;
+    display: flex;
+    margin: auto;
+}
+.con-searsh-container .con-searsh-content form input{
+    width: 100%;
+    padding: 0 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.con-searsh-container .con-searsh-content form input::placeholder{
+    color: var(--darkgold);
+}
+/* end reservation */

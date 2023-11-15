@@ -1,0 +1,118 @@
+/* start header section */
+.home {
+    height: 100vh;
+    background-image: url(./../../assets/images/contcact.jpg);
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (max-width:767px) {
+    .home::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 1;
+    }
+    
+    .home .content {
+        position: relative;
+        z-index: 2;
+    } 
+}
+.home img {
+    animation: logoanimate 1s linear infinite alternate;
+    transform-style: preserve-3d;
+    -webkit-animation: logoanimate 1s linear infinite alternate;
+}
+
+@keyframes logoanimate {
+    0% {
+        transform: translateY(0px);
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        -o-transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+        -webkit-transform: translateY(-10px);
+        -moz-transform: translateY(-10px);
+        -ms-transform: translateY(-10px);
+        -o-transform: translateY(-10px);
+    }
+
+}
+
+
+.home h1 {
+    font-size: 4rem;
+    background: linear-gradient(45deg, var(--darkgold), var(--lightgold));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.home .line {
+    display: block;
+    width: 150px;
+    height: 3px;
+    background: linear-gradient(to right, var(--darkgold), var(--lightgold));
+    margin: 15px 0 20px;
+}
+
+.home h3,
+.home p {
+    color: white;
+}
+
+
+/* end header section */
+/* start contact section */
+.contact{
+    padding-top: 70px !important;
+}
+.contact .info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start !important;
+}
+.contact .icon{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    background: linear-gradient(var(--darkgold),var(--lightgold));
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    margin-bottom: 20px;
+}
+.contact .icon svg{
+    color: var(--black);
+    font-size: 20px;
+}
+.contact .info p{
+    color: var(--black);
+    font-size: 20px;
+    margin-right: 20px;
+}
+.contact input{
+    text-align: right;
+}
+.contact textarea{
+    height: 100px;
+    resize: none;
+    overflow-y: auto;
+}
+/* end contact section */

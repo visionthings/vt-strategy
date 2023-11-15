@@ -1,0 +1,53 @@
+body {
+    overflow-y: auto;
+    background-color: #1e1e1e !important;   
+}
+.main{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main h3{
+    color: white;
+}
+.edit-date-container,.edit-time-container{
+    width: 50%;
+}
+@media (max-width:767px) {
+    .edit-date-container,.edit-time-container{
+        width: 80%;
+    }
+}
+form{
+    box-shadow: 0px 1px 2px 0px rgba(255, 215, 13, 0.25), 0px 2px 6px 2px rgba(224, 170, 10, 0.1);
+    
+    border-radius: 12px;
+    background-color: var(--black);
+    color: white;
+    margin: 15px 0;
+    padding: 30px;
+}
+p{
+    color: var(--darkgold);
+}
+form label{
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+    color: var(--lightgold);
+}
+
+.edit-time-content #generate_time div input{
+    background-color: transparent;
+    color: var(--darkgold);
+    border: none;
+    border-radius: 0;
+    border: 2px solid var(--lightgold);
+    -webkit-border-radius: 0;
+}

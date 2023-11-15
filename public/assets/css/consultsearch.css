@@ -1,0 +1,73 @@
+nav{
+    position: relative !important;
+}
+footer td{
+    color: white !important;
+}
+.cons{
+    background-image: url(./../images/termsback.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.cons .card{
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.cons .card:hover{
+    background-color: white;
+    box-shadow: 0 0 13px rgba(179, 115, 62 ,0.8);
+}
+.cons .card table tr td{
+    vertical-align: middle;
+    text-align: center;
+}
+.cons .card h6 span{
+    color: var(--darkgold);
+}
+.cons .card table thead td{
+    color: var(--lightgold);
+}
+.cons .card strong{
+    color: var(--darkgold);
+}
+.cons .card table .date{
+    font-size: 18px;
+    font-weight: bold;
+    background: linear-gradient(var(--darkgold),var(--lightgold));
+    -webkit-background-clip: text;
+    color: transparent;
+    
+}
+.cons .card .line{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+.cons .card table{
+    border-right: 1px solid var(--lightgold) ;
+}
+.cons .card table tbody{
+    border-bottom: 1px solid var(--lightgold);
+}
+.cons .card table tbody:last-child{
+    border-color: transparent;
+}
+.cons .card table a{
+    color: var(--darkgold);
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+    cursor: pointer;
+}
+.cons .card table a:hover{
+    color: var(--lightgold);
+}

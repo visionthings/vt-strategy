@@ -1,0 +1,230 @@
+:root{
+    --text-color:rgba(34,42,66,.7);
+    --success-text:#0d6832;
+    --primary-text:#273e63;
+    --warning-text:#73510d;
+    --danger-text: #A61001;
+    --success-bg:#d6f0e0;
+    --primary-bg:#dfe7f6;
+    --warning-bg:#fbf0da;
+    --danger-bg: #FFEBE9;
+    --primary-btn-text:#3b71ca;
+}
+body{
+    overflow-y: auto;
+    background-color: #1e1e1e !important;
+}
+.main{
+    background-color: #1e1e1e !important;
+    height: 100vh;   
+}
+.text-primary{
+    color:var(--primary-btn-text) !important;
+}
+
+.fw-bold{
+    font-weight: 500 !important;
+}
+
+h2{
+    font-weight: 400;
+    margin-bottom: unset;
+    
+}
+
+.action-icon{
+    font-size: 1.08rem;
+}
+
+/* //Badge color overwirte */
+
+
+
+.badge-success{
+    color:var(--success-text) !important;
+    background-color:var(--success-bg);
+    border: 1px solid;
+}
+
+.badge-primary{
+    color:var(--primary-text) !important;;
+    background-color:var(--primary-bg);
+    border: 1px solid;
+}
+
+.badge-warning{
+    color:var(--warning-text) !important;;
+    background-color:var(--warning-bg);
+    border: 1px solid;
+}
+
+.badge-danger{
+    color:var(--danger-text) !important;;
+    background-color: var(--danger-bg);
+    border: 1px solid;
+}
+
+.time{
+  font-size:.75rem;
+}
+
+
+
+/* table styling */
+
+/* primary table container  */
+table{
+  text-align: center; 
+}
+.table-container{
+    box-shadow: 0px 1px 2px 0px rgba(255, 215, 13, 0.25), 0px 2px 6px 2px rgba(224, 170, 10, 0.1);
+    padding:1rem;
+    border-radius: 12px;
+    background-color: var(--black);
+    color: white;
+    overflow-x: auto;
+}
+
+
+th{
+    padding:1rem .5rem !important;   
+   font-size: .875rem;
+    margin-bottom: 1rem !important;
+    background:linear-gradient(var(--lightgold),var(--darkgold));
+    color: var(--black) !important;
+    font-weight: 600 !important;
+}
+
+
+/* //Removes border from last table row */
+
+ tr td:last-child{
+    text-align: right;
+ }
+
+
+/* Changing TH bottom border color*/
+.table>:not(:last-child)>:last-child>* {
+     border-bottom-color: rgba(128, 128, 128, 0.277) !important;
+    
+}
+
+ul{
+    margin-bottom: 0rem !important;
+}
+
+.avatar-span{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  object-fit: fill;
+  background-image: url("https://st4.depositphotos.com/14903220/22197/v/450/depositphotos_221970610-stock-illustration-abstract-sign-avatar-icon-profile.jpg");
+}
+
+/* table styling end*/
+
+/*  button styling */
+.btn-link{
+    font-weight: 500;
+    color:var(--primary-text);
+    /* border:1px solid #2c58a094 !important; */
+    border-radius: 8px;
+    text-decoration: underline 0.1em rgb(255, 255, 255) !important;
+    text-underline-offset: 0.2em !important;
+    transition: text-decoration-color 300ms, text-underline-offset 300ms !important;
+}
+
+.btn-link:hover{
+  text-decoration-color:#0d6efd !important;
+  text-underline-offset: 0.4em !important; 
+}
+
+.empty-consultation{
+    width: 100%;
+    text-align: center;
+}
+table .active_status{
+  color: rgb(9, 178, 9);
+}
+table .arcived_status{
+  color: red;
+}
+div.edit-service{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.edit-service-content form {
+	margin:5px auto 0 auto;
+	padding:30px;
+	width:400px;
+	height:auto;
+	overflow:hidden;
+	background:var(--black);
+    color: white;
+	border-radius:10px;
+    box-shadow: 0px 1px 2px 0px rgba(255, 215, 13, 0.25), 0px 2px 6px 2px rgba(224, 170, 10, 0.1);
+}
+.edit-service-content form label{
+    color: var(--lightgold);
+    margin-bottom: 10px;
+}
+.edit-service form img{
+    display: block;
+    margin: 10px auto;
+}
+form button:active {
+	opacity:0.4;
+}
+form #genrate_date_btn{
+    font-size: 17px;
+    color: rgb(7, 112, 218);
+    cursor: pointer;
+}
+form #genrate_date_btn:hover{
+    transition: 0.5s all;
+    color: rgb(7, 41, 212);
+}
+form .error-alert-danger{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+
+.edit-service-conteiner{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+.edit-service-conteiner .close-btn{
+  position: absolute;
+  top: 14px;
+  right: 23px;
+  z-index: 9999;
+}
+.edit-service-conteiner .close-btn span{
+  font-size: 25px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.edit-service-conteiner .edit-service-content{
+    width: 100%;
+    height: 100%;
+}
+.edit-service-conteiner .edit-service-content .edit-service{
+    width: 100%;
+    height: 100%;
+}
